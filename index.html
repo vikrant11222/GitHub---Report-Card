@@ -3,43 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Report Card</title>
+  <title>GitHub User Profile</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="404Error.css">
-  <!-- <link rel="stylesheet" href="downloadBtn.css"> -->
-  <link rel="stylesheet" href="downloadBtnStyle.css">
-  <style>
-    /* Navbar styles */
-   
-  </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar-brand">
-      <img src="lightLogo.png" alt="Logo">
-      <h1>GitHub Report Card</h1>
+  <div class="container">
+    <h1>GitHub User Profile</h1>
+    <input type="text" id="username" placeholder="Enter GitHub username">
+    <button id="search-btn">Search</button>
+    <div id="user-info" class="hidden">
+      <img id="profile-pic" alt="Profile Picture">
+      <h2 id="full-name"></h2>
+      <p id="username"></p>
+      <p id="bio"></p>
+      <div id="stats">
+        <div>
+          <h3>Repositories</h3>
+          <p id="repos"></p>
+        </div>
+        <div>
+          <h3>Followers</h3>
+          <p id="followers"></p>
+        </div>
+        <div>
+          <h3>Following</h3>
+          <p id="following"></p>
+        </div>
+      </div>
+      <h2>Repositories</h2>
+      <div id="repo-list-container">
+        <ul id="repo-list"></ul>
+        <div id="repo-details" class="hidden">
+          <h3 id="repo-name"></h3>
+          <p id="repo-description"></p>
+          <p>
+            <span>Language: </span><span id="repo-language"></span>
+          </p>
+          <p>
+            <span>Stars: </span><span id="repo-stars"></span>
+          </p>
+          <p>
+            <span>Forks: </span><span id="repo-forks"></span>
+          </p>
+        </div>
+      </div>
+      <h2>Commit Graph</h2>
+      <div id="commit-graph"></div>
     </div>
-    <div class="navbar-search">
-      <input type="text" class="username" placeholder="UserName">
-      <button type="submit" class="button">Search</button>
-    </div>
-
-    <div class="navRight">
-      <!-- <button class="Button">
-        Download
-    </button> -->
-      <label class="navbar-switch">
-        <input type="checkbox" id="toggleSwitch">
-        <span class="slider"></span>
-      </label>
-    </div>
-  </nav><hr>
-  <div class="main">
-  <div class="usernameValidation mainContainer"></div>
   </div>
-  <script src="script.js">
-
-  </script>
-  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
