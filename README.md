@@ -1,5 +1,5 @@
 # GitHub-Report-Card
-<a href="https://github.com/vikrant11222/GitHub---Report-Card">Click me 🥹</a><br><br>
+<a href="https://github.com/vikrant11222/GitHub---Report-Card.git">Click me 🥹</a><br><br>
 
 ## Introduction
 
